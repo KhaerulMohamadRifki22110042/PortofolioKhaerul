@@ -1,58 +1,130 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio Saya</title>
+
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
+  <title>Portfolio khaerulmr03</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Khaerul</h1>
-      <p>Web Developer | Programmer | Freelancer</p>
-    </div>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div><a href="#" class="nav__logo">Khaerul</a></div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">Tentang</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Project</a></li>
+          <li class="nav__item"><a href="#Kontak" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#portofolio">Portofolio</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">Hi Saya <span class="home__title-color"><br>Khaerul Mohamad <br>Rifki</span></h1>
+      </div>
 
-  <section id="tentang" class="container">
-    <h2>Tentang Saya</h2>
-    <p>Saya adalah seorang pengembang web yang berfokus pada pembuatan aplikasi berbasis web menggunakan HTML, CSS, JavaScript, dan Laravel. Saya senang membangun proyek yang berguna dan belajar teknologi baru.</p>
+      <div class="home__social">
+
+      </div>
+
+      <div class="home__img">
+        <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg">
+          <mask id="mask0" mask-type="alpha">
+            <path d="M9.19 145.96C34.03 76.58 114.87 54.73 184.11 29.48C245.8 6.99 311.86 -14.95 370.73 14.14C431.21 44.03 467.95 107.51 477.19 174.31C485.9 237.23 454.93 294.38 416.51 344.95C373.74 401.25 326.07 462.8 255.44 466.19C179.42 469.84 111.55 422.14 65.16 361.81C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+          </mask>
+          <g mask="url(#mask0)">
+            <path d="M9.19 145.96C34.03 76.58 114.87 54.73 184.11 29.48C245.8 6.99 311.86 -14.95 370.73 14.14C431.21 44.03 467.95 107.51 477.19 174.31C485.9 237.23 454.93 294.38 416.51 344.95C373.74 401.25 326.07 462.8 255.44 466.19C179.42 469.84 111.55 422.14 65.16 361.81C17.48 299.81 -17.16 219.58 9.19 145.96Z"/>
+            <image class="home__blob-img" x="50" y="60" href="assets/img/profil.png" />
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">Tentang</h2>
+      <div class="about__container bd-grid">
+        <div class="about__img"><img src="assets/img/profil.png" alt="" /></div>
+        <div>
+          <h2 class="about__subtitle">Tentang Saya</h2>
+          <p class="about__text">Halo! Saya Khaerul Mohamad Rifki, seorang Mahasiswa STMIK Mardira Indonesia Jurusan Teknik Informatika. Saya menyukai desain yang estetis dan fungsional, serta pengembangan website.</p>
+        </div>
+      </div>
+    </section>
+
+<!--===== SKILLS =====-->
+<section class="skills section" id="skills">
+    <h2 class="section-title"> Skills</h2>
+    <div class="skills__container">
+      <div class="skills__data"><span class="skills__name">HTML5 </span></div>
+      <div class="skills__data"><span class="skills__name">CSS3</span></div>
+      <div class="skills__data"><span class="skills__name">PHP Dasar</span></div>
+      <div class="skills__data"><span class="skills__name">JavaScript Dasar</span></div>
+      <div class="skills__data"><span class="skills__name">MySQL</span></div>
+      <div class="skills__data"><span class="skills__name">Laravel Dasar</span></div>
+      <div class="skills__data"><span class="skills__name">Microsoft Office</span></div>
+      <div class="skills__data"><span class="skills__name">Pengelolaan Document</span></div>
+    </div>
   </section>
 
-  <section id="portofolio" class="container">
-    <h2>Portofolio</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Proyek 1</h3>
-        <p>Aplikasi Absensi Ekstrakurikuler menggunakan Laravel dan MySQL.</p>
+<!--===== WORK / PROJECT =====-->
+<section class="work section" id="work">
+    <h2 class="section-title">Project / Pekerjaan</h2>
+    <div class="project__container">
+      <div class="project__item">
+        <h3 class="project__title">Magang di Desa Cisondari</h3>
+        <p class="project__subtitle">Mei 2021 – Juli 2021</p>
+        <p class="project__desc">
+            Menyusun dan mengelola dokumen desa secara sistematis,
+            Menginput dan memverifikasi data penduduk menggunakan Microsoft Excel,
+            Membantu persiapan kegiatan desa, termasuk penataan kursi, meja, dan perlengkapan lainnya.
+          
+        </p>
       </div>
-      <div class="card">
-        <h3>Proyek 2</h3>
-        <p>Website Profil Sekolah berbasis HTML, CSS, dan JavaScript.</p>
+      <div class="project__item">
+        <h3 class="project__title">Projek Grup Website Absensi Eskul</h3>
+        <p class="project__subtitle">SMK Karya Pembangunan Pasirjambu</p>
+        <p class="project__desc">
+          Membuat website absensi untuk kegiatan ekstrakurikuler sekolah.
+        </p>
       </div>
-      <div class="card">
-        <h3>Proyek 3</h3>
-        <p>Aplikasi Toko ATK sederhana dengan sistem login dan CRUD.</p>
+      <div class="project__item">
+        <h3 class="project__title">Website Pribadi</h3>
+        <p class="project__subtitle">Tugas Kecerdasan Buatan</p>
+        <p class="project__desc">
+          Membuat Website pengumpulan tugas pribadi untuk memenuhi tugas kuliah Kecerdasan Buatan.
+        </p>
       </div>
     </div>
   </section>
 
-  <section id="kontak" class="container">
-    <h2>Kontak</h2>
-    <p>Email: khaerul@example.com</p>
-    <p>Telepon: 0812-3456-7890</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Khaerul. All rights reserved.</p>
+<!--===== FOOTER =====-->
+<footer class="footer">
+    <h2 class="footer__title">Kontak</h2>
+    <div class="footer__social">
+      <a href="https://facebook.com/share/1AUvTVEEP6/" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+      <a href="https://instagram.com/khaerul__03" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://wa.me/6281573147680" class="footer__icon"><i class="bx bxl-whatsapp"></i></a>
+      <a href="https://github.com/KhaerulMohamadRifki22110042" class="footer__icon"><i class="bx bxl-github"></i></a>
+      <a href="mailto:sayakhaerul@gmail.com" class="footer__icon"><i class="bx bxs-envelope"></i></a>
+    </div>
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
